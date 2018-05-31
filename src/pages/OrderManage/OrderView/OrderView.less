@@ -1,0 +1,59 @@
+.orderview-head{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .orderview-head-right{
+    min-width: 260px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.orderview-card{
+  &:not(:first-child){
+    margin-top: 32px;
+  }
+
+  .ant-card-head{
+    background-color: #ffe6e6;
+  }
+
+  .orderview-card-grid{
+    // padding: 12px 60px;
+    width: 100%;
+    padding:5px 0;
+    border-bottom:1px solid #e8e8e8;
+    img{
+      width: 100px;
+      cursor: pointer;
+    }
+  }
+}
+
+.view-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 99999;
+  // background-color: rgba(0, 0, 0, .3);
+  // transition: all .3s;
+
+  img{
+    width: 100px;
+    height: 100px;
+  }
+
+  &.hideimg{
+    transform: scale(0);
+  }
+  &.showimg{
+    transform: scale(6);
+  }
+}

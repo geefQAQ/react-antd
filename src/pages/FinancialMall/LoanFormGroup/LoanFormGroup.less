@@ -1,0 +1,120 @@
+@current-light-color: #fff0f0;
+@current-dark-color: #ffe6e6;
+@current-border-color: #ffaeae;
+@current-selected-color: #ff3c3c;
+
+.m-loangroup-header{
+  margin-top: 15px;
+  padding-left: 30px;
+  height: 40px;
+  line-height: 40px;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom: 1px solid @current-border-color;
+  background-color: @current-dark-color;
+  font-size: 15px;
+  font-weight: 600;
+
+  span{
+    display: inline-block;
+    position: relative;
+    width: 120px;
+    text-align: center;
+
+    &:first-child{
+      width: 280px;
+    }
+
+    &:not(:last-child):after{
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 1px;
+      height: 30px;
+      background-color: @current-border-color;
+    }
+  }
+}
+
+.m-loangroup-label{
+  padding: 0 5px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  border: 1px solid @current-border-color;
+  background-color: @current-light-color;
+
+  &:hover{
+    background-color: @current-dark-color;
+  }
+  
+  span{
+    display: inline-block;
+    position: relative;
+    padding: 0 10px 0 5px;
+    width: 120px;
+    text-align: center;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    &:first-child{
+      width: 280px;
+    }
+
+    &:not(:last-child):after{
+      content: '';
+      position: absolute;
+      top: 5px;
+      right: 0;
+      width: 1px;
+      height: 30px;
+      background-color: @current-border-color;
+    }
+  }
+
+}
+
+.ant-tree-node-selected{
+  .m-loangroup-label{
+    background-color: @current-dark-color;
+  }
+}
+
+.ant-tree {
+  li {
+    span.ant-tree-switcher{
+      height: 40px;
+      line-height: 40px;
+    }
+
+    .ant-tree-node-content-wrapper {
+      padding: 0;
+      height: 40px;
+      line-height: 40px;
+      background-color: #fff;
+
+      &:hover,
+      &.ant-tree-node-selected{
+        background-color: #fff;
+      }
+    }
+
+    // .ant-tree-node-selected{
+    //   position: relative;
+
+    //   &:after{
+    //     content: '';
+    //     position: absolute;
+    //     right: -28px;
+    //     top: 14px;
+    //     width: 16px;
+    //     height: 8px;
+    //     border-left: 2px solid @current-selected-color;
+    //     border-bottom: 2px solid @current-selected-color;
+    //     transform: rotate(-45deg);
+    //   }
+    // }
+    
+  }
+}

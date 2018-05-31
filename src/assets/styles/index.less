@@ -1,0 +1,92 @@
+@import "~antd/dist/antd.less";
+@import '~nprogress/nprogress.css';
+
+@color-line: #D8D8D8;
+@color-main: #6A99FD;
+
+@sider-width: 256px;
+
+// ::-webkit-scrollbar{
+//   width: 0;
+//   height: 6px;
+// }
+
+#nprogress{
+
+  .bar{
+    background-color: @primary-color;
+  }
+  
+  .peg{
+    box-shadow: 0 0 10px @primary-color, 0 0 5px @primary-color;
+  }
+
+  .spinner-icon{
+    border-top-color: @primary-color;
+    border-left-color: @primary-color;
+  }
+
+}
+
+.u-table-title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.page-head{
+  position: relative;
+  padding: 15px 40px 10px 25px;
+  background-color: #fff;
+
+  &:after{
+    content: '';
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 1px;
+    background-color: #bbb;
+    transform: scaleY(.1);
+  }
+}
+
+.page-content{
+  // margin-top: 20px;
+  padding: 40px;
+  background-color: #fff;
+}
+
+// 错位页面
+.pnf-wrapper{
+  margin: 200px auto;
+  width: 400px;
+
+  &--title{
+    color: #222;
+    font-size: 60px;
+    font-style: italic;
+    font-weight: bold;
+  }
+  &--subtitle{
+    margin-top: 4px;
+    color: #666;
+    font-size: 16px;
+    white-space: nowrap;
+
+    strong{
+      font-size: 28px;
+      margin-right: 8px;
+    }
+  }
+  &--tip{
+    margin-top: 20px;
+    color: #333;
+    font-size: 14px;
+
+    a{
+      color: @primary-color;
+    }
+  }
+}

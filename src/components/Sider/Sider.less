@@ -1,0 +1,21 @@
+@import "../../assets/styles/index.less";
+
+.m-siderwapper{
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: 100vh;
+  
+  &::-webkit-scrollbar{
+    width: 0;
+    height: 0;
+  }
+}
+
+.m-menulist{
+  margin: 40px 0;
+  transition: all .3s @ease-in-out;
+
+  .ant-menu{
+    transition: all .3s @ease-in-out;
+  }
+}

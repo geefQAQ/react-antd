@@ -1,0 +1,61 @@
+export default [{
+  // _id: '14',
+  // label: '首页',
+  // uri: '/dashboard',
+  // icon: 'home',
+  // order: 0,
+  // isShow: true
+// }, {
+//   _id: '00001',
+//   label: '渠道数据统计',
+//   uri: '/',
+//   icon: 'home',
+//   order: 0,
+//   isShow: true
+// }, {
+//   _id: '00002',
+//   label: '菜单设置',
+//   uri: '/menus',
+//   icon: 'setting',
+//   order: 1,
+//   isShow: true
+// }, {
+//   _id: '00003',
+//   label: '金融超市',
+//   uri: '/',
+//   icon: 'bank',
+//   order: 2,
+//   isShow: true
+// }, {
+//   _id: '03001',
+//   pid: '00003',
+//   label: '贷款产品列表',
+//   uri: '/loanprodlist',
+//   icon: 'database',
+//   order: 3,
+//   isShow: true
+// }, {
+//   _id: '03002',
+//   pid: '00003',
+//   label: '添加贷款产品',
+//   uri: '/loanform',
+//   icon: 'table',
+//   order: 4,
+//   isShow: true
+// }, {
+//   _id: '03003',
+//   pid: '00003',
+//   label: '贷款自定义表单字段',
+//   uri: '/loancomponent',
+//   icon: 'form',
+//   order: 5,
+//   isShow: true
+// }, {
+//   _id: '03004',
+//   pid: '00003',
+//   label: '贷款表单分组',
+//   uri: '/loanformgroup',
+//   icon: 'layout',
+//   order: 6,
+//   isShow: false
+}]
